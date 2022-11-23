@@ -41,7 +41,7 @@ public class MySteps extends Steps {
 		
 		WebElement cookieOption = driver.findElement(By.xpath("//*[@id=\"W0wltc\"]/div"));
 		WebElement searchField = driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"));
-		WebElement searchButton = driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[2]/div[2]/div[5]/center/input[1]"));
+		WebElement searchButton = driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]"));
 		cookieOption.click();
 		searchField.sendKeys(query);
 		searchField.sendKeys(" ");
