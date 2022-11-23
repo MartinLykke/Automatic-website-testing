@@ -1,12 +1,13 @@
 Sample story
 
 Narrative:
-As a web user
+As a renter
 I want to do a search
-In order to find a webpage
-					 
-Scenario: Search on Google
+In order to look at available apartments
+
+Scenario: Search on StudentHousing
 Given the browser is open
-And the page http://www.google.com is displayed
-When I search for SDU
-Then the content Syddansk Universitet is displayed
+And the page http://localhost:8080/site/index.html is displayed
+When I search for small apartment
+Then the content View Apartment is displayed
+

@@ -1,0 +1,31 @@
+body.homepage {
+    height: 100vh;
+    background-image: url("/site/home.jpg");
+    background-size: cover;
+}
+
+.img-card {
+    object-fit: cover;
+    height: 100%;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.page-wrapper {
+    max-width: 1300px;
+}
+
+.search-wrapper {
+    max-width: 400px;
+    height: calc(100vh - 2rem - 56px);
+}
+
+.apartment-rating {
+    max-width: 150px;
+}
+
+@media screen and (min-width: 992px) {
+    
+}

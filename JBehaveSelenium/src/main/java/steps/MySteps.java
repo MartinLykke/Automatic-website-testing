@@ -37,20 +37,22 @@ public class MySteps extends Steps {
 	}
 	
 	@When("I search for $query")
-	public void clickOn (String query) {
+	public void clickOn (String query) throws InterruptedException {
 		
-		WebElement cookieOption = driver.findElement(By.xpath("//*[@id=\"W0wltc\"]/div"));
-		WebElement searchField = driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input"));
-		WebElement searchButton = driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]"));
-		cookieOption.click();
+		Thread.sleep(1000);
+		WebElement searchField = driver.findElement(By.xpath("/html/body/div/div/form/input"));
+		WebElement searchButton = driver.findElement(By.xpath("/html/body/div/div/form/button"));
 		searchField.sendKeys(query);
-		searchField.sendKeys(" ");
+		Thread.sleep(2000);
+
+//		searchField.sendKeys(" ");
 		searchButton.click();
+
 	}
 	
 	@Then("the content $content is displayed")
-	public void checkContent (String content) {
-		
+	public void checkContent (String content) throws InterruptedException {
+		Thread.sleep(1000);
 		Assert.assertEquals(content,driver.findElement(By.xpath("//*[contains(text(),'"+content+"')]")).getText());
 		
 	}
