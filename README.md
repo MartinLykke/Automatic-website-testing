@@ -4,4 +4,4 @@ A project in Interactive Systems Engineering at SDU for automatically testing we
 # To run
 1. In CMD, run the command npm install http-server -g
 
-2. Navigate to the specific path of your file folder in CMD and run the command http-server
+2. Navigate to root folder of this project in CMD and run the command http-server
